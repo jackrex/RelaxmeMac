@@ -1,0 +1,601 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D8921F8323445A7800CA39AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8921F8223445A7800CA39AD /* AppDelegate.swift */; };
+		D8921F8523445A7800CA39AD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8921F8423445A7800CA39AD /* ViewController.swift */; };
+		D8921F8823445A7800CA39AD /* RelaxMeMac.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D8921F8623445A7800CA39AD /* RelaxMeMac.xcdatamodeld */; };
+		D8921F8A23445A7A00CA39AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8921F8923445A7A00CA39AD /* Assets.xcassets */; };
+		D8921F8D23445A7A00CA39AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8921F8B23445A7A00CA39AD /* Main.storyboard */; };
+		D8921F9923445A7A00CA39AD /* RelaxMeMacTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8921F9823445A7A00CA39AD /* RelaxMeMacTests.swift */; };
+		D8921FA423445A7A00CA39AD /* RelaxMeMacUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8921FA323445A7A00CA39AD /* RelaxMeMacUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D8921F9523445A7A00CA39AD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D8921F7723445A7800CA39AD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D8921F7E23445A7800CA39AD;
+			remoteInfo = RelaxMeMac;
+		};
+		D8921FA023445A7A00CA39AD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D8921F7723445A7800CA39AD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D8921F7E23445A7800CA39AD;
+			remoteInfo = RelaxMeMac;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D8921F7F23445A7800CA39AD /* RelaxMeMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RelaxMeMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8921F8223445A7800CA39AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D8921F8423445A7800CA39AD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D8921F8723445A7800CA39AD /* RelaxMeMac.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RelaxMeMac.xcdatamodel; sourceTree = "<group>"; };
+		D8921F8923445A7A00CA39AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D8921F8C23445A7A00CA39AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D8921F8E23445A7A00CA39AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8921F8F23445A7A00CA39AD /* RelaxMeMac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RelaxMeMac.entitlements; sourceTree = "<group>"; };
+		D8921F9423445A7A00CA39AD /* RelaxMeMacTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RelaxMeMacTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8921F9823445A7A00CA39AD /* RelaxMeMacTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelaxMeMacTests.swift; sourceTree = "<group>"; };
+		D8921F9A23445A7A00CA39AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8921F9F23445A7A00CA39AD /* RelaxMeMacUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RelaxMeMacUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8921FA323445A7A00CA39AD /* RelaxMeMacUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelaxMeMacUITests.swift; sourceTree = "<group>"; };
+		D8921FA523445A7A00CA39AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D8921F7C23445A7800CA39AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8921F9123445A7A00CA39AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8921F9C23445A7A00CA39AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D8921F7623445A7800CA39AD = {
+			isa = PBXGroup;
+			children = (
+				D8921F8123445A7800CA39AD /* RelaxMeMac */,
+				D8921F9723445A7A00CA39AD /* RelaxMeMacTests */,
+				D8921FA223445A7A00CA39AD /* RelaxMeMacUITests */,
+				D8921F8023445A7800CA39AD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D8921F8023445A7800CA39AD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D8921F7F23445A7800CA39AD /* RelaxMeMac.app */,
+				D8921F9423445A7A00CA39AD /* RelaxMeMacTests.xctest */,
+				D8921F9F23445A7A00CA39AD /* RelaxMeMacUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D8921F8123445A7800CA39AD /* RelaxMeMac */ = {
+			isa = PBXGroup;
+			children = (
+				D8921F8223445A7800CA39AD /* AppDelegate.swift */,
+				D8921F8423445A7800CA39AD /* ViewController.swift */,
+				D8921F8923445A7A00CA39AD /* Assets.xcassets */,
+				D8921F8B23445A7A00CA39AD /* Main.storyboard */,
+				D8921F8E23445A7A00CA39AD /* Info.plist */,
+				D8921F8F23445A7A00CA39AD /* RelaxMeMac.entitlements */,
+				D8921F8623445A7800CA39AD /* RelaxMeMac.xcdatamodeld */,
+			);
+			path = RelaxMeMac;
+			sourceTree = "<group>";
+		};
+		D8921F9723445A7A00CA39AD /* RelaxMeMacTests */ = {
+			isa = PBXGroup;
+			children = (
+				D8921F9823445A7A00CA39AD /* RelaxMeMacTests.swift */,
+				D8921F9A23445A7A00CA39AD /* Info.plist */,
+			);
+			path = RelaxMeMacTests;
+			sourceTree = "<group>";
+		};
+		D8921FA223445A7A00CA39AD /* RelaxMeMacUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D8921FA323445A7A00CA39AD /* RelaxMeMacUITests.swift */,
+				D8921FA523445A7A00CA39AD /* Info.plist */,
+			);
+			path = RelaxMeMacUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D8921F7E23445A7800CA39AD /* RelaxMeMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D8921FA823445A7A00CA39AD /* Build configuration list for PBXNativeTarget "RelaxMeMac" */;
+			buildPhases = (
+				D8921F7B23445A7800CA39AD /* Sources */,
+				D8921F7C23445A7800CA39AD /* Frameworks */,
+				D8921F7D23445A7800CA39AD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RelaxMeMac;
+			productName = RelaxMeMac;
+			productReference = D8921F7F23445A7800CA39AD /* RelaxMeMac.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D8921F9323445A7A00CA39AD /* RelaxMeMacTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D8921FAB23445A7A00CA39AD /* Build configuration list for PBXNativeTarget "RelaxMeMacTests" */;
+			buildPhases = (
+				D8921F9023445A7A00CA39AD /* Sources */,
+				D8921F9123445A7A00CA39AD /* Frameworks */,
+				D8921F9223445A7A00CA39AD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D8921F9623445A7A00CA39AD /* PBXTargetDependency */,
+			);
+			name = RelaxMeMacTests;
+			productName = RelaxMeMacTests;
+			productReference = D8921F9423445A7A00CA39AD /* RelaxMeMacTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D8921F9E23445A7A00CA39AD /* RelaxMeMacUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D8921FAE23445A7A00CA39AD /* Build configuration list for PBXNativeTarget "RelaxMeMacUITests" */;
+			buildPhases = (
+				D8921F9B23445A7A00CA39AD /* Sources */,
+				D8921F9C23445A7A00CA39AD /* Frameworks */,
+				D8921F9D23445A7A00CA39AD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D8921FA123445A7A00CA39AD /* PBXTargetDependency */,
+			);
+			name = RelaxMeMacUITests;
+			productName = RelaxMeMacUITests;
+			productReference = D8921F9F23445A7A00CA39AD /* RelaxMeMacUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D8921F7723445A7800CA39AD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = Sunny;
+				TargetAttributes = {
+					D8921F7E23445A7800CA39AD = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					D8921F9323445A7A00CA39AD = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = D8921F7E23445A7800CA39AD;
+					};
+					D8921F9E23445A7A00CA39AD = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = D8921F7E23445A7800CA39AD;
+					};
+				};
+			};
+			buildConfigurationList = D8921F7A23445A7800CA39AD /* Build configuration list for PBXProject "RelaxMeMac" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D8921F7623445A7800CA39AD;
+			productRefGroup = D8921F8023445A7800CA39AD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D8921F7E23445A7800CA39AD /* RelaxMeMac */,
+				D8921F9323445A7A00CA39AD /* RelaxMeMacTests */,
+				D8921F9E23445A7A00CA39AD /* RelaxMeMacUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D8921F7D23445A7800CA39AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8921F8A23445A7A00CA39AD /* Assets.xcassets in Resources */,
+				D8921F8D23445A7A00CA39AD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8921F9223445A7A00CA39AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8921F9D23445A7A00CA39AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D8921F7B23445A7800CA39AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8921F8523445A7800CA39AD /* ViewController.swift in Sources */,
+				D8921F8823445A7800CA39AD /* RelaxMeMac.xcdatamodeld in Sources */,
+				D8921F8323445A7800CA39AD /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8921F9023445A7A00CA39AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8921F9923445A7A00CA39AD /* RelaxMeMacTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8921F9B23445A7A00CA39AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8921FA423445A7A00CA39AD /* RelaxMeMacUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D8921F9623445A7A00CA39AD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D8921F7E23445A7800CA39AD /* RelaxMeMac */;
+			targetProxy = D8921F9523445A7A00CA39AD /* PBXContainerItemProxy */;
+		};
+		D8921FA123445A7A00CA39AD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D8921F7E23445A7800CA39AD /* RelaxMeMac */;
+			targetProxy = D8921FA023445A7A00CA39AD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D8921F8B23445A7A00CA39AD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D8921F8C23445A7A00CA39AD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D8921FA623445A7A00CA39AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D8921FA723445A7A00CA39AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		D8921FA923445A7A00CA39AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = RelaxMeMac/RelaxMeMac.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 7A4MVM3QLD;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = RelaxMeMac/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.calmzen.zen.mac.RelaxMeMac;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		D8921FAA23445A7A00CA39AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = RelaxMeMac/RelaxMeMac.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 7A4MVM3QLD;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = RelaxMeMac/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.calmzen.zen.mac.RelaxMeMac;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		D8921FAC23445A7A00CA39AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 7A4MVM3QLD;
+				INFOPLIST_FILE = RelaxMeMacTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = com.calmzen.zen.mac.RelaxMeMacTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RelaxMeMac.app/Contents/MacOS/RelaxMeMac";
+			};
+			name = Debug;
+		};
+		D8921FAD23445A7A00CA39AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 7A4MVM3QLD;
+				INFOPLIST_FILE = RelaxMeMacTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = com.calmzen.zen.mac.RelaxMeMacTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RelaxMeMac.app/Contents/MacOS/RelaxMeMac";
+			};
+			name = Release;
+		};
+		D8921FAF23445A7A00CA39AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 7A4MVM3QLD;
+				INFOPLIST_FILE = RelaxMeMacUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.calmzen.zen.mac.RelaxMeMacUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = RelaxMeMac;
+			};
+			name = Debug;
+		};
+		D8921FB023445A7A00CA39AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 7A4MVM3QLD;
+				INFOPLIST_FILE = RelaxMeMacUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.calmzen.zen.mac.RelaxMeMacUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = RelaxMeMac;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D8921F7A23445A7800CA39AD /* Build configuration list for PBXProject "RelaxMeMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8921FA623445A7A00CA39AD /* Debug */,
+				D8921FA723445A7A00CA39AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D8921FA823445A7A00CA39AD /* Build configuration list for PBXNativeTarget "RelaxMeMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8921FA923445A7A00CA39AD /* Debug */,
+				D8921FAA23445A7A00CA39AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D8921FAB23445A7A00CA39AD /* Build configuration list for PBXNativeTarget "RelaxMeMacTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8921FAC23445A7A00CA39AD /* Debug */,
+				D8921FAD23445A7A00CA39AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D8921FAE23445A7A00CA39AD /* Build configuration list for PBXNativeTarget "RelaxMeMacUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8921FAF23445A7A00CA39AD /* Debug */,
+				D8921FB023445A7A00CA39AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D8921F8623445A7800CA39AD /* RelaxMeMac.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D8921F8723445A7800CA39AD /* RelaxMeMac.xcdatamodel */,
+			);
+			currentVersion = D8921F8723445A7800CA39AD /* RelaxMeMac.xcdatamodel */;
+			path = RelaxMeMac.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = D8921F7723445A7800CA39AD /* Project object */;
+}
