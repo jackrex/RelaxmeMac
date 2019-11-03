@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		66D9C932E163A8DD013CD4FE /* Pods_RelaxMeMacUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30BDB50EA467DC32A712CDB4 /* Pods_RelaxMeMacUITests.framework */; };
+		85AAE04721E142A7033CF5FC /* Pods_RelaxMeMac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6D2D214AEE412395B13E52E /* Pods_RelaxMeMac.framework */; };
 		D8921F8323445A7800CA39AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8921F8223445A7800CA39AD /* AppDelegate.swift */; };
 		D8921F8523445A7800CA39AD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8921F8423445A7800CA39AD /* ViewController.swift */; };
 		D8921F8823445A7800CA39AD /* RelaxMeMac.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D8921F8623445A7800CA39AD /* RelaxMeMac.xcdatamodeld */; };
@@ -14,6 +16,29 @@
 		D8921F8D23445A7A00CA39AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8921F8B23445A7A00CA39AD /* Main.storyboard */; };
 		D8921F9923445A7A00CA39AD /* RelaxMeMacTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8921F9823445A7A00CA39AD /* RelaxMeMacTests.swift */; };
 		D8921FA423445A7A00CA39AD /* RelaxMeMacUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8921FA323445A7A00CA39AD /* RelaxMeMacUITests.swift */; };
+		D8FD505D236D9E3600B53F40 /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FD505C236D9E3600B53F40 /* ExploreViewController.swift */; };
+		D8FD5060236DA68100B53F40 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FD505E236DA68100B53F40 /* WebViewController.swift */; };
+		D8FD5063236DA84E00B53F40 /* HttpApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FD5062236DA84E00B53F40 /* HttpApi.swift */; };
+		D8FD5065236DA93400B53F40 /* icon_small.png in Resources */ = {isa = PBXBuildFile; fileRef = D8FD5064236DA93400B53F40 /* icon_small.png */; };
+		D8FD506C236DA94A00B53F40 /* sounds.json in Resources */ = {isa = PBXBuildFile; fileRef = D8FD5066236DA94900B53F40 /* sounds.json */; };
+		D8FD506D236DA94A00B53F40 /* bell_sound0.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D8FD5067236DA94900B53F40 /* bell_sound0.mp3 */; };
+		D8FD506E236DA94A00B53F40 /* bell_sound3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D8FD5068236DA94900B53F40 /* bell_sound3.mp3 */; };
+		D8FD506F236DA94A00B53F40 /* bell_sound1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D8FD5069236DA94900B53F40 /* bell_sound1.mp3 */; };
+		D8FD5070236DA94A00B53F40 /* timeup.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D8FD506A236DA94900B53F40 /* timeup.mp3 */; };
+		D8FD5071236DA94A00B53F40 /* bell_sound2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D8FD506B236DA94A00B53F40 /* bell_sound2.mp3 */; };
+		D8FD5074236DA96200B53F40 /* ding-finish.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D8FD5073236DA96200B53F40 /* ding-finish.mp3 */; };
+		D8FD5076236DA9FE00B53F40 /* ResourceUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FD5075236DA9FE00B53F40 /* ResourceUtil.swift */; };
+		D8FD5078236DAA2E00B53F40 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FD5077236DAA2E00B53F40 /* String+Extension.swift */; };
+		D8FD507A236DAA4C00B53F40 /* Contanst.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FD5079236DAA4C00B53F40 /* Contanst.swift */; };
+		D8FD507D236DAD0A00B53F40 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FD507C236DAD0A00B53F40 /* AboutViewController.swift */; };
+		D8FD507F236DAD2500B53F40 /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FD507E236DAD2500B53F40 /* MoreViewController.swift */; };
+		D8FD5082236DADF900B53F40 /* term.html in Resources */ = {isa = PBXBuildFile; fileRef = D8FD5080236DADF800B53F40 /* term.html */; };
+		D8FD5083236DADF900B53F40 /* privacy.html in Resources */ = {isa = PBXBuildFile; fileRef = D8FD5081236DADF900B53F40 /* privacy.html */; };
+		D8FD5088236DAE3C00B53F40 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D8FD508A236DAE3C00B53F40 /* Localizable.strings */; };
+		D8FD508E236DB19E00B53F40 /* SecurityUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FD508D236DB19E00B53F40 /* SecurityUtil.swift */; };
+		D8FD5090236DB1AD00B53F40 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FD508F236DB1AD00B53F40 /* Model.swift */; };
+		D8FD5092236E786100B53F40 /* MusicPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FD5091236E786100B53F40 /* MusicPlayerViewController.swift */; };
+		DAA5BBD5F7E27C195F4ECEA4 /* Pods_RelaxMeMacTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 268311F6133617F390605E0E /* Pods_RelaxMeMacTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +59,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		268311F6133617F390605E0E /* Pods_RelaxMeMacTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RelaxMeMacTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		30BDB50EA467DC32A712CDB4 /* Pods_RelaxMeMacUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RelaxMeMacUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C0AABF67675170DB94A9EAE /* Pods-RelaxMeMacUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RelaxMeMacUITests.release.xcconfig"; path = "Target Support Files/Pods-RelaxMeMacUITests/Pods-RelaxMeMacUITests.release.xcconfig"; sourceTree = "<group>"; };
+		5EB2EEDE8875B8C774F03EE7 /* Pods-RelaxMeMac.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RelaxMeMac.debug.xcconfig"; path = "Target Support Files/Pods-RelaxMeMac/Pods-RelaxMeMac.debug.xcconfig"; sourceTree = "<group>"; };
+		9399952164FB752F8544D3B5 /* Pods-RelaxMeMacUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RelaxMeMacUITests.debug.xcconfig"; path = "Target Support Files/Pods-RelaxMeMacUITests/Pods-RelaxMeMacUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A4D1024D4C3A140C75AC6A93 /* Pods-RelaxMeMac.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RelaxMeMac.release.xcconfig"; path = "Target Support Files/Pods-RelaxMeMac/Pods-RelaxMeMac.release.xcconfig"; sourceTree = "<group>"; };
+		A6D2D214AEE412395B13E52E /* Pods_RelaxMeMac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RelaxMeMac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA8DE06439106C28A969A970 /* Pods-RelaxMeMacTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RelaxMeMacTests.release.xcconfig"; path = "Target Support Files/Pods-RelaxMeMacTests/Pods-RelaxMeMacTests.release.xcconfig"; sourceTree = "<group>"; };
 		D8921F7F23445A7800CA39AD /* RelaxMeMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RelaxMeMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8921F8223445A7800CA39AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D8921F8423445A7800CA39AD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -48,6 +81,33 @@
 		D8921F9F23445A7A00CA39AD /* RelaxMeMacUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RelaxMeMacUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8921FA323445A7A00CA39AD /* RelaxMeMacUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelaxMeMacUITests.swift; sourceTree = "<group>"; };
 		D8921FA523445A7A00CA39AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8FD505C236D9E3600B53F40 /* ExploreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
+		D8FD505E236DA68100B53F40 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		D8FD5062236DA84E00B53F40 /* HttpApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpApi.swift; sourceTree = "<group>"; };
+		D8FD5064236DA93400B53F40 /* icon_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_small.png; sourceTree = "<group>"; };
+		D8FD5066236DA94900B53F40 /* sounds.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sounds.json; sourceTree = "<group>"; };
+		D8FD5067236DA94900B53F40 /* bell_sound0.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bell_sound0.mp3; sourceTree = "<group>"; };
+		D8FD5068236DA94900B53F40 /* bell_sound3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bell_sound3.mp3; sourceTree = "<group>"; };
+		D8FD5069236DA94900B53F40 /* bell_sound1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bell_sound1.mp3; sourceTree = "<group>"; };
+		D8FD506A236DA94900B53F40 /* timeup.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = timeup.mp3; sourceTree = "<group>"; };
+		D8FD506B236DA94A00B53F40 /* bell_sound2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bell_sound2.mp3; sourceTree = "<group>"; };
+		D8FD5073236DA96200B53F40 /* ding-finish.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ding-finish.mp3"; sourceTree = "<group>"; };
+		D8FD5075236DA9FE00B53F40 /* ResourceUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceUtil.swift; sourceTree = "<group>"; };
+		D8FD5077236DAA2E00B53F40 /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		D8FD5079236DAA4C00B53F40 /* Contanst.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contanst.swift; sourceTree = "<group>"; };
+		D8FD507C236DAD0A00B53F40 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		D8FD507E236DAD2500B53F40 /* MoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
+		D8FD5080236DADF800B53F40 /* term.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = term.html; sourceTree = "<group>"; };
+		D8FD5081236DADF900B53F40 /* privacy.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = privacy.html; sourceTree = "<group>"; };
+		D8FD5086236DAE3000B53F40 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		D8FD5087236DAE3600B53F40 /* zh-HK */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-HK"; path = "zh-HK.lproj/Main.strings"; sourceTree = "<group>"; };
+		D8FD5089236DAE3C00B53F40 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		D8FD508B236DAE4000B53F40 /* zh-HK */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-HK"; path = "zh-HK.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		D8FD508C236DAE4100B53F40 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		D8FD508D236DB19E00B53F40 /* SecurityUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecurityUtil.swift; sourceTree = "<group>"; };
+		D8FD508F236DB1AD00B53F40 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		D8FD5091236E786100B53F40 /* MusicPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPlayerViewController.swift; sourceTree = "<group>"; };
+		FDA5B538752776883EFD574C /* Pods-RelaxMeMacTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RelaxMeMacTests.debug.xcconfig"; path = "Target Support Files/Pods-RelaxMeMacTests/Pods-RelaxMeMacTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +115,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85AAE04721E142A7033CF5FC /* Pods_RelaxMeMac.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +123,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAA5BBD5F7E27C195F4ECEA4 /* Pods_RelaxMeMacTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,12 +131,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66D9C932E163A8DD013CD4FE /* Pods_RelaxMeMacUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3758D6D1C618A4FCBA71E367 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5EB2EEDE8875B8C774F03EE7 /* Pods-RelaxMeMac.debug.xcconfig */,
+				A4D1024D4C3A140C75AC6A93 /* Pods-RelaxMeMac.release.xcconfig */,
+				FDA5B538752776883EFD574C /* Pods-RelaxMeMacTests.debug.xcconfig */,
+				CA8DE06439106C28A969A970 /* Pods-RelaxMeMacTests.release.xcconfig */,
+				9399952164FB752F8544D3B5 /* Pods-RelaxMeMacUITests.debug.xcconfig */,
+				5C0AABF67675170DB94A9EAE /* Pods-RelaxMeMacUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		6420A3C462D2DCE2DF0ACA8B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A6D2D214AEE412395B13E52E /* Pods_RelaxMeMac.framework */,
+				268311F6133617F390605E0E /* Pods_RelaxMeMacTests.framework */,
+				30BDB50EA467DC32A712CDB4 /* Pods_RelaxMeMacUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D8921F7623445A7800CA39AD = {
 			isa = PBXGroup;
 			children = (
@@ -82,6 +168,8 @@
 				D8921F9723445A7A00CA39AD /* RelaxMeMacTests */,
 				D8921FA223445A7A00CA39AD /* RelaxMeMacUITests */,
 				D8921F8023445A7800CA39AD /* Products */,
+				3758D6D1C618A4FCBA71E367 /* Pods */,
+				6420A3C462D2DCE2DF0ACA8B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,6 +186,7 @@
 		D8921F8123445A7800CA39AD /* RelaxMeMac */ = {
 			isa = PBXGroup;
 			children = (
+				D8FD5064236DA93400B53F40 /* icon_small.png */,
 				D8921F8223445A7800CA39AD /* AppDelegate.swift */,
 				D8921F8423445A7800CA39AD /* ViewController.swift */,
 				D8921F8923445A7A00CA39AD /* Assets.xcassets */,
@@ -105,6 +194,14 @@
 				D8921F8E23445A7A00CA39AD /* Info.plist */,
 				D8921F8F23445A7A00CA39AD /* RelaxMeMac.entitlements */,
 				D8921F8623445A7800CA39AD /* RelaxMeMac.xcdatamodeld */,
+				D8FD508F236DB1AD00B53F40 /* Model.swift */,
+				D8FD507B236DABEF00B53F40 /* ViewController */,
+				D8FD5062236DA84E00B53F40 /* HttpApi.swift */,
+				D8FD5079236DAA4C00B53F40 /* Contanst.swift */,
+				D8FD508D236DB19E00B53F40 /* SecurityUtil.swift */,
+				D8FD5077236DAA2E00B53F40 /* String+Extension.swift */,
+				D8FD5072236DA95000B53F40 /* Resource */,
+				D8FD5075236DA9FE00B53F40 /* ResourceUtil.swift */,
 			);
 			path = RelaxMeMac;
 			sourceTree = "<group>";
@@ -127,6 +224,35 @@
 			path = RelaxMeMacUITests;
 			sourceTree = "<group>";
 		};
+		D8FD5072236DA95000B53F40 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				D8FD5081236DADF900B53F40 /* privacy.html */,
+				D8FD5080236DADF800B53F40 /* term.html */,
+				D8FD5073236DA96200B53F40 /* ding-finish.mp3 */,
+				D8FD5067236DA94900B53F40 /* bell_sound0.mp3 */,
+				D8FD5069236DA94900B53F40 /* bell_sound1.mp3 */,
+				D8FD506B236DA94A00B53F40 /* bell_sound2.mp3 */,
+				D8FD5068236DA94900B53F40 /* bell_sound3.mp3 */,
+				D8FD5066236DA94900B53F40 /* sounds.json */,
+				D8FD506A236DA94900B53F40 /* timeup.mp3 */,
+				D8FD508A236DAE3C00B53F40 /* Localizable.strings */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		D8FD507B236DABEF00B53F40 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D8FD505C236D9E3600B53F40 /* ExploreViewController.swift */,
+				D8FD505E236DA68100B53F40 /* WebViewController.swift */,
+				D8FD507C236DAD0A00B53F40 /* AboutViewController.swift */,
+				D8FD507E236DAD2500B53F40 /* MoreViewController.swift */,
+				D8FD5091236E786100B53F40 /* MusicPlayerViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,9 +260,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D8921FA823445A7A00CA39AD /* Build configuration list for PBXNativeTarget "RelaxMeMac" */;
 			buildPhases = (
+				ACC93E5EF7A38826ED8795F9 /* [CP] Check Pods Manifest.lock */,
 				D8921F7B23445A7800CA39AD /* Sources */,
 				D8921F7C23445A7800CA39AD /* Frameworks */,
 				D8921F7D23445A7800CA39AD /* Resources */,
+				80702138A591D221420D887C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -151,6 +279,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D8921FAB23445A7A00CA39AD /* Build configuration list for PBXNativeTarget "RelaxMeMacTests" */;
 			buildPhases = (
+				4E2B40894C04079AEFDA6E86 /* [CP] Check Pods Manifest.lock */,
 				D8921F9023445A7A00CA39AD /* Sources */,
 				D8921F9123445A7A00CA39AD /* Frameworks */,
 				D8921F9223445A7A00CA39AD /* Resources */,
@@ -169,6 +298,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D8921FAE23445A7A00CA39AD /* Build configuration list for PBXNativeTarget "RelaxMeMacUITests" */;
 			buildPhases = (
+				3F26B90286CDD9325CD04B0A /* [CP] Check Pods Manifest.lock */,
 				D8921F9B23445A7A00CA39AD /* Sources */,
 				D8921F9C23445A7A00CA39AD /* Frameworks */,
 				D8921F9D23445A7A00CA39AD /* Resources */,
@@ -213,6 +343,8 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
+				"zh-HK",
 			);
 			mainGroup = D8921F7623445A7800CA39AD;
 			productRefGroup = D8921F8023445A7800CA39AD /* Products */;
@@ -231,8 +363,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8FD5071236DA94A00B53F40 /* bell_sound2.mp3 in Resources */,
+				D8FD5083236DADF900B53F40 /* privacy.html in Resources */,
 				D8921F8A23445A7A00CA39AD /* Assets.xcassets in Resources */,
+				D8FD5082236DADF900B53F40 /* term.html in Resources */,
 				D8921F8D23445A7A00CA39AD /* Main.storyboard in Resources */,
+				D8FD5065236DA93400B53F40 /* icon_small.png in Resources */,
+				D8FD506E236DA94A00B53F40 /* bell_sound3.mp3 in Resources */,
+				D8FD5070236DA94A00B53F40 /* timeup.mp3 in Resources */,
+				D8FD506F236DA94A00B53F40 /* bell_sound1.mp3 in Resources */,
+				D8FD5088236DAE3C00B53F40 /* Localizable.strings in Resources */,
+				D8FD506D236DA94A00B53F40 /* bell_sound0.mp3 in Resources */,
+				D8FD506C236DA94A00B53F40 /* sounds.json in Resources */,
+				D8FD5074236DA96200B53F40 /* ding-finish.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,13 +395,110 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3F26B90286CDD9325CD04B0A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RelaxMeMacUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4E2B40894C04079AEFDA6E86 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RelaxMeMacTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		80702138A591D221420D887C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RelaxMeMac/Pods-RelaxMeMac-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RelaxMeMac/Pods-RelaxMeMac-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RelaxMeMac/Pods-RelaxMeMac-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ACC93E5EF7A38826ED8795F9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RelaxMeMac-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D8921F7B23445A7800CA39AD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8FD5078236DAA2E00B53F40 /* String+Extension.swift in Sources */,
+				D8FD505D236D9E3600B53F40 /* ExploreViewController.swift in Sources */,
 				D8921F8523445A7800CA39AD /* ViewController.swift in Sources */,
+				D8FD5092236E786100B53F40 /* MusicPlayerViewController.swift in Sources */,
+				D8FD507A236DAA4C00B53F40 /* Contanst.swift in Sources */,
+				D8FD507F236DAD2500B53F40 /* MoreViewController.swift in Sources */,
+				D8FD5063236DA84E00B53F40 /* HttpApi.swift in Sources */,
+				D8FD5090236DB1AD00B53F40 /* Model.swift in Sources */,
+				D8FD5076236DA9FE00B53F40 /* ResourceUtil.swift in Sources */,
+				D8FD508E236DB19E00B53F40 /* SecurityUtil.swift in Sources */,
 				D8921F8823445A7800CA39AD /* RelaxMeMac.xcdatamodeld in Sources */,
+				D8FD5060236DA68100B53F40 /* WebViewController.swift in Sources */,
+				D8FD507D236DAD0A00B53F40 /* AboutViewController.swift in Sources */,
 				D8921F8323445A7800CA39AD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -299,8 +539,20 @@
 			isa = PBXVariantGroup;
 			children = (
 				D8921F8C23445A7A00CA39AD /* Base */,
+				D8FD5086236DAE3000B53F40 /* zh-Hans */,
+				D8FD5087236DAE3600B53F40 /* zh-HK */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D8FD508A236DAE3C00B53F40 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D8FD5089236DAE3C00B53F40 /* en */,
+				D8FD508B236DAE4000B53F40 /* zh-HK */,
+				D8FD508C236DAE4100B53F40 /* zh-Hans */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -310,6 +562,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -370,6 +623,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -421,6 +675,7 @@
 		};
 		D8921FA923445A7A00CA39AD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5EB2EEDE8875B8C774F03EE7 /* Pods-RelaxMeMac.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = RelaxMeMac/RelaxMeMac.entitlements;
@@ -433,7 +688,8 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.calmzen.zen.mac.RelaxMeMac;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = com.calmzen.zen.mac;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -441,6 +697,7 @@
 		};
 		D8921FAA23445A7A00CA39AD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4D1024D4C3A140C75AC6A93 /* Pods-RelaxMeMac.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = RelaxMeMac/RelaxMeMac.entitlements;
@@ -453,7 +710,8 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.calmzen.zen.mac.RelaxMeMac;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = com.calmzen.zen.mac;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -461,6 +719,7 @@
 		};
 		D8921FAC23445A7A00CA39AD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FDA5B538752776883EFD574C /* Pods-RelaxMeMacTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -483,6 +742,7 @@
 		};
 		D8921FAD23445A7A00CA39AD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA8DE06439106C28A969A970 /* Pods-RelaxMeMacTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -505,6 +765,7 @@
 		};
 		D8921FAF23445A7A00CA39AD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9399952164FB752F8544D3B5 /* Pods-RelaxMeMacUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -525,6 +786,7 @@
 		};
 		D8921FB023445A7A00CA39AD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C0AABF67675170DB94A9EAE /* Pods-RelaxMeMacUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

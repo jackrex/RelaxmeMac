@@ -11,7 +11,16 @@ import Cocoa
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
 
+    
+    
+    
+    func applicationDockMenu(_ sender: NSApplication) -> NSMenu? {
+        return nil
+    }
 
+    func applicationDidBecomeActive(_ notification: Notification) {
+        
+    }
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         // Insert code here to initialize your application
@@ -20,6 +29,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     func applicationWillTerminate(_ aNotification: Notification) {
         // Insert code here to tear down your application
     }
+    
+   
 
     // MARK: - Core Data stack
 
