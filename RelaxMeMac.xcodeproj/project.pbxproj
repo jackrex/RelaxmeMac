@@ -20,13 +20,6 @@
 		D8FD5060236DA68100B53F40 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FD505E236DA68100B53F40 /* WebViewController.swift */; };
 		D8FD5063236DA84E00B53F40 /* HttpApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FD5062236DA84E00B53F40 /* HttpApi.swift */; };
 		D8FD5065236DA93400B53F40 /* icon_small.png in Resources */ = {isa = PBXBuildFile; fileRef = D8FD5064236DA93400B53F40 /* icon_small.png */; };
-		D8FD506C236DA94A00B53F40 /* sounds.json in Resources */ = {isa = PBXBuildFile; fileRef = D8FD5066236DA94900B53F40 /* sounds.json */; };
-		D8FD506D236DA94A00B53F40 /* bell_sound0.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D8FD5067236DA94900B53F40 /* bell_sound0.mp3 */; };
-		D8FD506E236DA94A00B53F40 /* bell_sound3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D8FD5068236DA94900B53F40 /* bell_sound3.mp3 */; };
-		D8FD506F236DA94A00B53F40 /* bell_sound1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D8FD5069236DA94900B53F40 /* bell_sound1.mp3 */; };
-		D8FD5070236DA94A00B53F40 /* timeup.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D8FD506A236DA94900B53F40 /* timeup.mp3 */; };
-		D8FD5071236DA94A00B53F40 /* bell_sound2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D8FD506B236DA94A00B53F40 /* bell_sound2.mp3 */; };
-		D8FD5074236DA96200B53F40 /* ding-finish.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D8FD5073236DA96200B53F40 /* ding-finish.mp3 */; };
 		D8FD5076236DA9FE00B53F40 /* ResourceUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FD5075236DA9FE00B53F40 /* ResourceUtil.swift */; };
 		D8FD5078236DAA2E00B53F40 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FD5077236DAA2E00B53F40 /* String+Extension.swift */; };
 		D8FD507A236DAA4C00B53F40 /* Contanst.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FD5079236DAA4C00B53F40 /* Contanst.swift */; };
@@ -38,6 +31,14 @@
 		D8FD508E236DB19E00B53F40 /* SecurityUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FD508D236DB19E00B53F40 /* SecurityUtil.swift */; };
 		D8FD5090236DB1AD00B53F40 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FD508F236DB1AD00B53F40 /* Model.swift */; };
 		D8FD5092236E786100B53F40 /* MusicPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FD5091236E786100B53F40 /* MusicPlayerViewController.swift */; };
+		D8FD5095236EA21400B53F40 /* ExploreCollectionViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FD5093236EA21400B53F40 /* ExploreCollectionViewItem.swift */; };
+		D8FD5096236EA21400B53F40 /* ExploreCollectionViewItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8FD5094236EA21400B53F40 /* ExploreCollectionViewItem.xib */; };
+		D8FD509A236EBD4600B53F40 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FD5099236EBD4600B53F40 /* HeaderView.swift */; };
+		D8FD509C236EBD5000B53F40 /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8FD509B236EBD5000B53F40 /* HeaderView.xib */; };
+		D8FD50A0236EC89900B53F40 /* SwiftHEXColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FD509F236EC89900B53F40 /* SwiftHEXColors.swift */; };
+		D8FD50A2236EC98800B53F40 /* DownloadApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FD50A1236EC98800B53F40 /* DownloadApi.swift */; };
+		D8FD50A4236EC9C500B53F40 /* FileApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FD50A3236EC9C500B53F40 /* FileApi.swift */; };
+		D8FD50A6236F011B00B53F40 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FD50A5236F011B00B53F40 /* Common.swift */; };
 		DAA5BBD5F7E27C195F4ECEA4 /* Pods_RelaxMeMacTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 268311F6133617F390605E0E /* Pods_RelaxMeMacTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -85,13 +86,6 @@
 		D8FD505E236DA68100B53F40 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		D8FD5062236DA84E00B53F40 /* HttpApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpApi.swift; sourceTree = "<group>"; };
 		D8FD5064236DA93400B53F40 /* icon_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_small.png; sourceTree = "<group>"; };
-		D8FD5066236DA94900B53F40 /* sounds.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sounds.json; sourceTree = "<group>"; };
-		D8FD5067236DA94900B53F40 /* bell_sound0.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bell_sound0.mp3; sourceTree = "<group>"; };
-		D8FD5068236DA94900B53F40 /* bell_sound3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bell_sound3.mp3; sourceTree = "<group>"; };
-		D8FD5069236DA94900B53F40 /* bell_sound1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bell_sound1.mp3; sourceTree = "<group>"; };
-		D8FD506A236DA94900B53F40 /* timeup.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = timeup.mp3; sourceTree = "<group>"; };
-		D8FD506B236DA94A00B53F40 /* bell_sound2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bell_sound2.mp3; sourceTree = "<group>"; };
-		D8FD5073236DA96200B53F40 /* ding-finish.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ding-finish.mp3"; sourceTree = "<group>"; };
 		D8FD5075236DA9FE00B53F40 /* ResourceUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceUtil.swift; sourceTree = "<group>"; };
 		D8FD5077236DAA2E00B53F40 /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		D8FD5079236DAA4C00B53F40 /* Contanst.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contanst.swift; sourceTree = "<group>"; };
@@ -107,6 +101,14 @@
 		D8FD508D236DB19E00B53F40 /* SecurityUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecurityUtil.swift; sourceTree = "<group>"; };
 		D8FD508F236DB1AD00B53F40 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		D8FD5091236E786100B53F40 /* MusicPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPlayerViewController.swift; sourceTree = "<group>"; };
+		D8FD5093236EA21400B53F40 /* ExploreCollectionViewItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreCollectionViewItem.swift; sourceTree = "<group>"; };
+		D8FD5094236EA21400B53F40 /* ExploreCollectionViewItem.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExploreCollectionViewItem.xib; sourceTree = "<group>"; };
+		D8FD5099236EBD4600B53F40 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		D8FD509B236EBD5000B53F40 /* HeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
+		D8FD509F236EC89900B53F40 /* SwiftHEXColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SwiftHEXColors.swift; path = ../Pods/SwiftHEXColors/Sources/SwiftHEXColors.swift; sourceTree = "<group>"; };
+		D8FD50A1236EC98800B53F40 /* DownloadApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadApi.swift; sourceTree = "<group>"; };
+		D8FD50A3236EC9C500B53F40 /* FileApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileApi.swift; sourceTree = "<group>"; };
+		D8FD50A5236F011B00B53F40 /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		FDA5B538752776883EFD574C /* Pods-RelaxMeMacTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RelaxMeMacTests.debug.xcconfig"; path = "Target Support Files/Pods-RelaxMeMacTests/Pods-RelaxMeMacTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -202,6 +204,10 @@
 				D8FD5077236DAA2E00B53F40 /* String+Extension.swift */,
 				D8FD5072236DA95000B53F40 /* Resource */,
 				D8FD5075236DA9FE00B53F40 /* ResourceUtil.swift */,
+				D8FD509F236EC89900B53F40 /* SwiftHEXColors.swift */,
+				D8FD50A1236EC98800B53F40 /* DownloadApi.swift */,
+				D8FD50A3236EC9C500B53F40 /* FileApi.swift */,
+				D8FD50A5236F011B00B53F40 /* Common.swift */,
 			);
 			path = RelaxMeMac;
 			sourceTree = "<group>";
@@ -229,13 +235,6 @@
 			children = (
 				D8FD5081236DADF900B53F40 /* privacy.html */,
 				D8FD5080236DADF800B53F40 /* term.html */,
-				D8FD5073236DA96200B53F40 /* ding-finish.mp3 */,
-				D8FD5067236DA94900B53F40 /* bell_sound0.mp3 */,
-				D8FD5069236DA94900B53F40 /* bell_sound1.mp3 */,
-				D8FD506B236DA94A00B53F40 /* bell_sound2.mp3 */,
-				D8FD5068236DA94900B53F40 /* bell_sound3.mp3 */,
-				D8FD5066236DA94900B53F40 /* sounds.json */,
-				D8FD506A236DA94900B53F40 /* timeup.mp3 */,
 				D8FD508A236DAE3C00B53F40 /* Localizable.strings */,
 			);
 			path = Resource;
@@ -249,6 +248,10 @@
 				D8FD507C236DAD0A00B53F40 /* AboutViewController.swift */,
 				D8FD507E236DAD2500B53F40 /* MoreViewController.swift */,
 				D8FD5091236E786100B53F40 /* MusicPlayerViewController.swift */,
+				D8FD5093236EA21400B53F40 /* ExploreCollectionViewItem.swift */,
+				D8FD5094236EA21400B53F40 /* ExploreCollectionViewItem.xib */,
+				D8FD5099236EBD4600B53F40 /* HeaderView.swift */,
+				D8FD509B236EBD5000B53F40 /* HeaderView.xib */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -363,19 +366,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D8FD5071236DA94A00B53F40 /* bell_sound2.mp3 in Resources */,
 				D8FD5083236DADF900B53F40 /* privacy.html in Resources */,
 				D8921F8A23445A7A00CA39AD /* Assets.xcassets in Resources */,
+				D8FD5096236EA21400B53F40 /* ExploreCollectionViewItem.xib in Resources */,
 				D8FD5082236DADF900B53F40 /* term.html in Resources */,
 				D8921F8D23445A7A00CA39AD /* Main.storyboard in Resources */,
+				D8FD509C236EBD5000B53F40 /* HeaderView.xib in Resources */,
 				D8FD5065236DA93400B53F40 /* icon_small.png in Resources */,
-				D8FD506E236DA94A00B53F40 /* bell_sound3.mp3 in Resources */,
-				D8FD5070236DA94A00B53F40 /* timeup.mp3 in Resources */,
-				D8FD506F236DA94A00B53F40 /* bell_sound1.mp3 in Resources */,
 				D8FD5088236DAE3C00B53F40 /* Localizable.strings in Resources */,
-				D8FD506D236DA94A00B53F40 /* bell_sound0.mp3 in Resources */,
-				D8FD506C236DA94A00B53F40 /* sounds.json in Resources */,
-				D8FD5074236DA96200B53F40 /* ding-finish.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -493,13 +491,19 @@
 				D8FD507A236DAA4C00B53F40 /* Contanst.swift in Sources */,
 				D8FD507F236DAD2500B53F40 /* MoreViewController.swift in Sources */,
 				D8FD5063236DA84E00B53F40 /* HttpApi.swift in Sources */,
+				D8FD50A0236EC89900B53F40 /* SwiftHEXColors.swift in Sources */,
+				D8FD50A6236F011B00B53F40 /* Common.swift in Sources */,
 				D8FD5090236DB1AD00B53F40 /* Model.swift in Sources */,
 				D8FD5076236DA9FE00B53F40 /* ResourceUtil.swift in Sources */,
+				D8FD50A4236EC9C500B53F40 /* FileApi.swift in Sources */,
+				D8FD5095236EA21400B53F40 /* ExploreCollectionViewItem.swift in Sources */,
 				D8FD508E236DB19E00B53F40 /* SecurityUtil.swift in Sources */,
 				D8921F8823445A7800CA39AD /* RelaxMeMac.xcdatamodeld in Sources */,
 				D8FD5060236DA68100B53F40 /* WebViewController.swift in Sources */,
+				D8FD50A2236EC98800B53F40 /* DownloadApi.swift in Sources */,
 				D8FD507D236DAD0A00B53F40 /* AboutViewController.swift in Sources */,
 				D8921F8323445A7800CA39AD /* AppDelegate.swift in Sources */,
+				D8FD509A236EBD4600B53F40 /* HeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

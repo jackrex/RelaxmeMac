@@ -14,6 +14,9 @@ target 'RelaxMeMac' do
   # Pods for RelaxMeMac
   pod 'CryptoSwift'
   pod 'Hue'
+  pod 'SDWebImage', '~> 5.0'
+  pod 'SwiftHEXColors'
+  
 
   target 'RelaxMeMacTests' do
     inherit! :search_paths

@@ -7,12 +7,23 @@
 //
 
 import Cocoa
+import AVFoundation
+
+class AudioManager: NSObject, AVAudioPlayerDelegate {
+    static let sharedManager = AudioManager()  // singleton
+    
+    var audioPlayer: AVAudioPlayer!
+    var currentIndex: Int!
+    var currentCover: NSImage!
+    var bgCover: String!
+    var listData: [TVListDetail]!
+
+    
+}
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
 
-    
-    
     
     func applicationDockMenu(_ sender: NSApplication) -> NSMenu? {
         return nil

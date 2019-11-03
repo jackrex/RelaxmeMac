@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14868" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14868"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="ExploreCollectionViewItem" customModule="RelaxMeMac" customModuleProvider="target">
+            <connections>
+                <outlet property="cellBottomView" destination="GBG-rU-U0l" id="uJN-NK-dAE"/>
+                <outlet property="cellImageView" destination="a55-O8-R1e" id="HUv-hG-046"/>
+                <outlet property="cellTextLabel" destination="bYB-ef-55g" id="I1N-Zk-Ju0"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="180" height="120"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="a55-O8-R1e">
+                    <rect key="frame" x="0.0" y="0.0" width="180" height="120"/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="axesIndependently" id="jOo-NA-2Cp"/>
+                </imageView>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="GBG-rU-U0l">
+                    <rect key="frame" x="0.0" y="0.0" width="180" height="35"/>
+                    <subviews>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="bYB-ef-55g">
+                            <rect key="frame" x="69" y="9" width="43" height="17"/>
+                            <textFieldCell key="cell" lineBreakMode="clipping" title="Label" id="rgP-Xr-YEg">
+                                <font key="font" metaFont="systemHeavy" size="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="bYB-ef-55g" firstAttribute="centerX" secondItem="GBG-rU-U0l" secondAttribute="centerX" id="ap9-OG-mhb"/>
+                        <constraint firstItem="bYB-ef-55g" firstAttribute="centerY" secondItem="GBG-rU-U0l" secondAttribute="centerY" id="h6Q-qB-w7C"/>
+                        <constraint firstAttribute="height" constant="35" id="oqC-Ju-1RH"/>
+                    </constraints>
+                </customView>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rMa-3U-I9W">
+                    <rect key="frame" x="82" y="52" width="16" height="16"/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="main_play" id="GUz-ID-DQ8"/>
+                </imageView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="GBG-rU-U0l" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" id="1SI-y6-8Us"/>
+                <constraint firstAttribute="trailing" secondItem="GBG-rU-U0l" secondAttribute="trailing" id="3Tv-ST-1Hc"/>
+                <constraint firstAttribute="trailing" secondItem="a55-O8-R1e" secondAttribute="trailing" id="6Tx-RL-Wde"/>
+                <constraint firstAttribute="bottom" secondItem="GBG-rU-U0l" secondAttribute="bottom" id="Hpp-gP-Jum"/>
+                <constraint firstItem="rMa-3U-I9W" firstAttribute="centerX" secondItem="Hz6-mo-xeY" secondAttribute="centerX" id="TQG-pd-CUR"/>
+                <constraint firstItem="a55-O8-R1e" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" id="TQT-2n-OXB"/>
+                <constraint firstItem="rMa-3U-I9W" firstAttribute="centerY" secondItem="Hz6-mo-xeY" secondAttribute="centerY" id="Z3T-YO-Mnm"/>
+                <constraint firstAttribute="bottom" secondItem="a55-O8-R1e" secondAttribute="bottom" id="nR5-Iu-iFB"/>
+                <constraint firstItem="a55-O8-R1e" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" id="oGe-dv-0XX"/>
+            </constraints>
+            <point key="canvasLocation" x="91" y="207"/>
+        </customView>
+        <collectionViewItem identifier="ExploreCollectionViewItem" id="QAa-Gh-SRV" customClass="ExploreCollectionViewItem" customModule="RelaxMeMac" customModuleProvider="target"/>
+    </objects>
+    <resources>
+        <image name="main_play" width="16" height="16"/>
+    </resources>
+</document>

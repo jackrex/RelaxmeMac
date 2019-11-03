@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14868" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14868"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="HeaderView" customModule="RelaxMeMac" customModuleProvider="target"/>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView identifier="HeaderView" id="c22-O7-iKe" customClass="HeaderView" customModule="RelaxMeMac" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="398" height="42"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="dFD-S9-gaX">
+                    <rect key="frame" x="18" y="11" width="53" height="21"/>
+                    <textFieldCell key="cell" lineBreakMode="clipping" title="Label" id="rhR-ek-sLU">
+                        <font key="font" metaFont="systemHeavy" size="18"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="hxn-s5-hJ8">
+                    <rect key="frame" x="324" y="13" width="37" height="16"/>
+                    <textFieldCell key="cell" lineBreakMode="clipping" title="Label" id="BoH-FG-bed">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <constraints>
+                <constraint firstItem="dFD-S9-gaX" firstAttribute="centerY" secondItem="c22-O7-iKe" secondAttribute="centerY" id="8lG-nL-xoT"/>
+                <constraint firstItem="dFD-S9-gaX" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" constant="20" id="9NW-yO-KVg"/>
+                <constraint firstAttribute="trailing" secondItem="hxn-s5-hJ8" secondAttribute="trailing" constant="39" id="HLf-v2-sGn"/>
+                <constraint firstItem="hxn-s5-hJ8" firstAttribute="centerY" secondItem="dFD-S9-gaX" secondAttribute="centerY" id="d9b-kG-wyW"/>
+            </constraints>
+            <connections>
+                <outlet property="numberLabel" destination="hxn-s5-hJ8" id="r5q-Cc-bkm"/>
+                <outlet property="sectionLabel" destination="dFD-S9-gaX" id="iw2-0P-YGa"/>
+            </connections>
+            <point key="canvasLocation" x="302" y="84"/>
+        </customView>
+    </objects>
+</document>

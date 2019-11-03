@@ -9,48 +9,31 @@
 import Cocoa
 import Alamofire
 import AlamofireImage
-
+import SDWebImage
+import AVFoundation
 
 
 class ExploreViewController: NSViewController {
     
-    @IBOutlet weak var tableView: NSTableView!
     @IBOutlet weak var indicatorView: NSProgressIndicator!
     @IBOutlet weak var retryBtn: NSButton!
+    @IBOutlet weak var exploreCollectionView: NSCollectionView!
     
     var data :[TVListData]!
     var aid: String!
     var titleText: String!
     
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do view setup here.
-    
-        self.indicatorView.startAnimation(nil)
-        self.getAudioList()
-        self.retryBtn.isHidden = true
+    self.indicatorView.startAnimation(nil)
+    self.getAudioList()
+    self.retryBtn.isHidden = true
 
-        
-        self.tableView.doubleAction = #selector(tableViewDoubleClick)
-    
     }
-    
-    
-     @objc func tableViewDoubleClick() {
-       
-        // 1
-        let item = self.data[self.tableView.selectedRow]
-        print(item)
-       
-      if let board = storyboard {
-                       let playerVC = board.instantiateController(withIdentifier: "MusicPlayerViewController") as! MusicPlayerViewController
-                       playerVC.title = "Music Player"
-                       self.presentAsModalWindow(playerVC)
-                   }
-      }
       
-  
     func getAudioList() -> Void {
         HttpApi.exploreList { (data, success) in
             if success {
@@ -58,7 +41,7 @@ class ExploreViewController: NSViewController {
                 let model = try! jsonDecoder.decode(TVMainData.self, from: data)
                 self.data = model.data
                 // decrypt
-                self.tableView.reloadData()
+                self.exploreCollectionView.reloadData()
                 self.indicatorView.isHidden = true
             }else {
                 self.indicatorView.isHidden = true
@@ -80,55 +63,90 @@ class ExploreViewController: NSViewController {
     
 }
 
-extension ExploreViewController: NSTableViewDelegate {
+extension ExploreViewController: NSCollectionViewDelegate {
     
-    fileprivate enum Cellid {
-        static let IconCell = "iconcellid"
-        static let NameCell = "namecellid"
-        static let SizeCell = "sizecellid"
-
+    func collectionView(_ collectionView: NSCollectionView, didSelectItemsAt indexPaths: Set<IndexPath>) {
+        collectionView.deselectItems(at: indexPaths)
+        guard let indexPath = indexPaths.first else {return}
+        guard let item = collectionView.item(at: indexPath) else {return}
+        
+        let cData = self.data![indexPath.section].detail
+        let detailData = cData[indexPath.item]
+        
+        if let board = storyboard {
+            let mpViewVC = board.instantiateController(withIdentifier: "MusicPlayerViewController") as! MusicPlayerViewController
+            mpViewVC.currentIndex = indexPath.item
+            mpViewVC.data = detailData
+            mpViewVC.listData = cData
+            mpViewVC.title = "Mp3 Player"
+              self.presentAsModalWindow(mpViewVC)
+          }
     }
     
     
-    func tableView(_ tableView: NSTableView, didClick tableColumn: NSTableColumn) {
-            // 点击 column 不是 item 的相应
-      
-    }
-    
-    func tableView(_ tableView: NSTableView, viewFor tableColumn: NSTableColumn?, row: Int) -> NSView? {
-        
-        if data == nil {
-            return nil
-        }
-        
-        let tableData = self.data[row]
-        
-        if tableColumn == tableView.tableColumns[0] {
-            if let cell = tableView.makeView(withIdentifier: NSUserInterfaceItemIdentifier.init(Cellid.IconCell), owner: nil) as? IconTableCellView {
-                let image = NSImage(byReferencing:NSURL(string: tableData.detail[0].img_url)! as URL)
-                cell.image.image = image
-                return cell
-               }
-        }
- 
-        
-        return nil
-        
-    }
-    
-    func tableView(_ tableView: NSTableView, heightOfRow row: Int) -> CGFloat {
-        return 80
-    }
 
 }
 
-extension ExploreViewController: NSTableViewDataSource {
+extension ExploreViewController: NSCollectionViewDataSource {
     
-    func numberOfRows(in tableView: NSTableView) -> Int {
+    
+    
+    func collectionView(_ collectionView: NSCollectionView, numberOfItemsInSection section: Int) -> Int {
+        return data[section].detail.count
+    }
+    
+    func collectionView(_ collectionView: NSCollectionView, itemForRepresentedObjectAt indexPath: IndexPath) -> NSCollectionViewItem {
+        let cData = self.data[indexPath.section].detail
+        let detailData = cData[indexPath.item]
+        
+        let item = collectionView.makeItem(withIdentifier: NSUserInterfaceItemIdentifier.init("ExploreCollectionViewItem"), for: indexPath) as! ExploreCollectionViewItem
+        item.cellTextLabel.stringValue = detailData.story_name.trimmingCharacters(in: .whitespacesAndNewlines)
+        item.cellImageView.image = NSImage.init(named: "image-placeholder")
+        item.cellImageView.sd_setImage(with: URL.init(string: detailData.img_url)!, completed: nil)
+        
+        item.cellImageView.layer?.cornerRadius = 4
+        item.cellImageView.layer?.masksToBounds = true
+        
+        
+        return item
+        
+    }
+    
+    
+    func collectionView(_ collectionView: NSCollectionView, viewForSupplementaryElementOfKind kind: NSCollectionView.SupplementaryElementKind, at indexPath: IndexPath) -> NSView {
+        let headerview = collectionView.makeSupplementaryView(ofKind: NSCollectionView.elementKindSectionHeader, withIdentifier: NSUserInterfaceItemIdentifier.init("HeaderView"), for: indexPath) as! HeaderView
+        let cData = self.data[indexPath.section]
+        headerview.sectionLabel.stringValue = cData.title.trimmingCharacters(in: .whitespacesAndNewlines)
+        headerview.numberLabel.stringValue = cData.subtitle.trimmingCharacters(in: .whitespacesAndNewlines)
+        headerview.wantsLayer = true
+        headerview.layer?.backgroundColor = NSColor(hexString: "A0B3FB")?.cgColor
+        return headerview
+    }
+    
+    
+    func numberOfSections(in collectionView: NSCollectionView) -> Int {
         if data != nil {
             return data.count
         }
         return 0
     }
+    
+    
+ 
+    
+}
+
+extension ExploreViewController: NSCollectionViewDelegateFlowLayout {
+    
+    func collectionView(_ collectionView: NSCollectionView, layout collectionViewLayout: NSCollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> NSSize {
+        return NSSize.init(width: 1000, height: 40)
+    }
+    
+}
+
+// Play Mp3
+extension ExploreViewController {
+    
+ 
     
 }
