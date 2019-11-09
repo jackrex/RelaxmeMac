@@ -102,8 +102,7 @@ extension ExploreViewController: NSCollectionViewDataSource {
         let item = collectionView.makeItem(withIdentifier: NSUserInterfaceItemIdentifier.init("ExploreCollectionViewItem"), for: indexPath) as! ExploreCollectionViewItem
         item.cellTextLabel.stringValue = detailData.story_name.trimmingCharacters(in: .whitespacesAndNewlines)
         item.cellImageView.image = NSImage.init(named: "image-placeholder")
-        item.cellImageView.sd_setImage(with: URL.init(string: detailData.img_url)!, completed: nil)
-        
+        item.cellImageView.sd_setImage(with: URL.init(string: detailData.img_url)!, placeholderImage: NSImage.init(named: "image-placeholder"), options: .allowInvalidSSLCertificates, completed: nil)
         item.cellImageView.layer?.cornerRadius = 4
         item.cellImageView.layer?.masksToBounds = true
         

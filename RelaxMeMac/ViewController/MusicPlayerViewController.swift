@@ -44,6 +44,7 @@ class MusicPlayerViewController: NSViewController, AVAudioPlayerDelegate {
 
     
     @IBOutlet weak var coverImageView: NSImageView!
+    var trueCoverImageView: NSImageView!
     @IBOutlet weak var musicLabel: NSTextField!
     @IBOutlet weak var startTimeLabel: NSTextField!
     @IBOutlet weak var endTimeLabel: NSTextField!
@@ -71,31 +72,33 @@ class MusicPlayerViewController: NSViewController, AVAudioPlayerDelegate {
         self.musicLabel.stringValue = data.story_name
         self.preparePlay(playUrl: currentPlayUrl)
         self.becomeFirstResponder()
-        self.coverImageView.sd_setImage(with: URL.init(string: data.img_url.squareFormat())!, completed: nil)
         
         self.coverImageView.wantsLayer = true
-        self.coverImageView.canDrawSubviewsIntoLayer = true
-        self.coverImageView.layer?.cornerRadius = 100
-        self.coverImageView.layer?.masksToBounds = true
-        
+             self.coverImageView.canDrawSubviewsIntoLayer = true
+             self.coverImageView.layer?.cornerRadius = 100
+             self.coverImageView.layer?.masksToBounds = true
+                     
+        self.coverImageView.sd_setImage(with: URL.init(string: data.img_url.squareFormat())!, placeholderImage: NSImage.init(named: "image-placeholder-rect"), options: .allowInvalidSSLCertificates, completed: nil)
+
+     
         
     }
     
       func startPlay() -> Void {
-            let anim = CABasicAnimation.init(keyPath: "transform.rotation.z")
-            anim.toValue = 2.0 * Double.pi
-            anim.duration = 2.0
-            anim.timingFunction = CAMediaTimingFunction.init(name: CAMediaTimingFunctionName.linear)
-            anim.isCumulative = true
-            anim.isRemovedOnCompletion = false
-            anim.repeatCount = .greatestFiniteMagnitude
+   
+        let rotate = CABasicAnimation(keyPath: "transform.rotation.z")
+        rotate.fillMode = .forwards
+        rotate.fromValue = 0.0
+        rotate.toValue = CGFloat(-Double.pi * 2.0)
+        rotate.duration = 4
+        rotate.timingFunction = CAMediaTimingFunction.init(name: CAMediaTimingFunctionName.linear)
+        rotate.isCumulative = true
+        rotate.isRemovedOnCompletion = false
+        rotate.repeatCount = .greatestFiniteMagnitude
+        coverImageView.layer?.position = CGPoint.init(x:coverImageView.frame.midX, y:coverImageView.frame.midY)
+        coverImageView.layer?.anchorPoint = CGPoint.init(x: 0.5, y: 0.5)
+        coverImageView.layer?.add(rotate, forKey: nil)
 
-//            coverImageView.layer?.anchorPoint = CGPoint.init(x: 0.5, y: 0.5)
-        
-            coverImageView.layer!.add(anim, forKey: "AnimatedKey")
-            coverImageView.layer!.speed = 0.2
-            coverImageView.layer!.beginTime = 0.0
-        
             if self.audioPlayer == nil {
                 Common.showToastCenter(self.view, "Loading Please Wait..".localized())
                 return
@@ -169,6 +172,7 @@ class MusicPlayerViewController: NSViewController, AVAudioPlayerDelegate {
     
     
      func updateMusic() -> Void {
+        self.coverImageView.layer?.resumeAnimate()
             let coverUrl = listData[currentIndex].img_url
             let txt = listData[currentIndex].story_name
             self.musicLabel.stringValue = txt

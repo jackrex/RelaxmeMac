@@ -79,7 +79,7 @@ class HttpApi: NSObject {
            
            public static func exploreList(_ completion: @escaping (Data, Bool) -> ()) -> Void {
                
-               netmanager.request(host + "/explore/tv", method: .get, parameters: signParams("/explore/tv"), encoding: JSONEncoding.default, headers: getHeader()).validate(statusCode: 200..<300).responseData { (response) in
+               netmanager.request(host + "/explore/tv", method: .get, parameters: nil, encoding: JSONEncoding.default, headers: getHeader()).validate(statusCode: 200..<300).responseData { (response) in
                    switch response.result {
                    case .success:
                        print(String.init(data: response.result.value!, encoding: String.Encoding.utf8)!)

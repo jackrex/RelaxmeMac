@@ -23,7 +23,10 @@ extension String {
     }
     
     func squareFormat() -> String {
-        return self + Contanst.squareFormat
+        if self.contains("lcfile.com") {
+                   return self + Contanst.squareFormat
+        }
+        return self 
     }
     
     func smallAvatarFormat() -> String {

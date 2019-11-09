@@ -6,6 +6,7 @@
   Copyright © 2019 Sunny. All rights reserved.
 */
 "CFBundleName" = "RelaxMe";
+"CFBundleDisplayName" = "RelaxMe";
 "intl_terms_and_conditions" = "Terms & Conditions";
 "intl_terms_of_service" = "Terms & Conditions";
 "intl_privacy_policy" = "Privacy Policy";

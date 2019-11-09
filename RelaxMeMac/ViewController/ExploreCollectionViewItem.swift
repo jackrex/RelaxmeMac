@@ -19,7 +19,8 @@ class ExploreCollectionViewItem: NSCollectionViewItem {
        view.wantsLayer = true
         view.layer?.backgroundColor = NSColor.white.cgColor
         
-        cellBottomView.layer?.backgroundColor = NSColor.purple.cgColor
+        cellBottomView.wantsLayer = true
+        cellBottomView.layer?.backgroundColor = NSColor.lightGray.cgColor
      }
     
     

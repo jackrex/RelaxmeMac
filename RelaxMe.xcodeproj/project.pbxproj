@@ -68,7 +68,7 @@
 		A4D1024D4C3A140C75AC6A93 /* Pods-RelaxMeMac.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RelaxMeMac.release.xcconfig"; path = "Target Support Files/Pods-RelaxMeMac/Pods-RelaxMeMac.release.xcconfig"; sourceTree = "<group>"; };
 		A6D2D214AEE412395B13E52E /* Pods_RelaxMeMac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RelaxMeMac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA8DE06439106C28A969A970 /* Pods-RelaxMeMacTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RelaxMeMacTests.release.xcconfig"; path = "Target Support Files/Pods-RelaxMeMacTests/Pods-RelaxMeMacTests.release.xcconfig"; sourceTree = "<group>"; };
-		D8921F7F23445A7800CA39AD /* RelaxMeMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RelaxMeMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8921F7F23445A7800CA39AD /* RelaxMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RelaxMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8921F8223445A7800CA39AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D8921F8423445A7800CA39AD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D8921F8723445A7800CA39AD /* RelaxMeMac.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RelaxMeMac.xcdatamodel; sourceTree = "<group>"; };
@@ -178,7 +178,7 @@
 		D8921F8023445A7800CA39AD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D8921F7F23445A7800CA39AD /* RelaxMeMac.app */,
+				D8921F7F23445A7800CA39AD /* RelaxMe.app */,
 				D8921F9423445A7A00CA39AD /* RelaxMeMacTests.xctest */,
 				D8921F9F23445A7A00CA39AD /* RelaxMeMacUITests.xctest */,
 			);
@@ -259,9 +259,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D8921F7E23445A7800CA39AD /* RelaxMeMac */ = {
+		D8921F7E23445A7800CA39AD /* RelaxMe */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D8921FA823445A7A00CA39AD /* Build configuration list for PBXNativeTarget "RelaxMeMac" */;
+			buildConfigurationList = D8921FA823445A7A00CA39AD /* Build configuration list for PBXNativeTarget "RelaxMe" */;
 			buildPhases = (
 				ACC93E5EF7A38826ED8795F9 /* [CP] Check Pods Manifest.lock */,
 				D8921F7B23445A7800CA39AD /* Sources */,
@@ -273,9 +273,9 @@
 			);
 			dependencies = (
 			);
-			name = RelaxMeMac;
+			name = RelaxMe;
 			productName = RelaxMeMac;
-			productReference = D8921F7F23445A7800CA39AD /* RelaxMeMac.app */;
+			productReference = D8921F7F23445A7800CA39AD /* RelaxMe.app */;
 			productType = "com.apple.product-type.application";
 		};
 		D8921F9323445A7A00CA39AD /* RelaxMeMacTests */ = {
@@ -339,7 +339,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D8921F7A23445A7800CA39AD /* Build configuration list for PBXProject "RelaxMeMac" */;
+			buildConfigurationList = D8921F7A23445A7800CA39AD /* Build configuration list for PBXProject "RelaxMe" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -354,7 +354,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D8921F7E23445A7800CA39AD /* RelaxMeMac */,
+				D8921F7E23445A7800CA39AD /* RelaxMe */,
 				D8921F9323445A7A00CA39AD /* RelaxMeMacTests */,
 				D8921F9E23445A7A00CA39AD /* RelaxMeMacUITests */,
 			);
@@ -528,12 +528,12 @@
 /* Begin PBXTargetDependency section */
 		D8921F9623445A7A00CA39AD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D8921F7E23445A7800CA39AD /* RelaxMeMac */;
+			target = D8921F7E23445A7800CA39AD /* RelaxMe */;
 			targetProxy = D8921F9523445A7A00CA39AD /* PBXContainerItemProxy */;
 		};
 		D8921FA123445A7A00CA39AD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D8921F7E23445A7800CA39AD /* RelaxMeMac */;
+			target = D8921F7E23445A7800CA39AD /* RelaxMe */;
 			targetProxy = D8921FA023445A7A00CA39AD /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -812,7 +812,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D8921F7A23445A7800CA39AD /* Build configuration list for PBXProject "RelaxMeMac" */ = {
+		D8921F7A23445A7800CA39AD /* Build configuration list for PBXProject "RelaxMe" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D8921FA623445A7A00CA39AD /* Debug */,
@@ -821,7 +821,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D8921FA823445A7A00CA39AD /* Build configuration list for PBXNativeTarget "RelaxMeMac" */ = {
+		D8921FA823445A7A00CA39AD /* Build configuration list for PBXNativeTarget "RelaxMe" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D8921FA923445A7A00CA39AD /* Debug */,
