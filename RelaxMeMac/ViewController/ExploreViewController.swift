@@ -33,6 +33,12 @@ class ExploreViewController: NSViewController {
     self.retryBtn.isHidden = true
 
     }
+    
+    @IBAction func quitClicked(sender: NSMenuItem) {
+        NSApplication.shared.terminate(self)
+    }
+    
+
       
     func getAudioList() -> Void {
         HttpApi.exploreList { (data, success) in

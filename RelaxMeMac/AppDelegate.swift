@@ -41,8 +41,29 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         // Insert code here to tear down your application
     }
     
-   
-
+    func applicationShouldTerminateAfterLastWindowClosed(_ sender: NSApplication) -> Bool {
+        return false
+    }
+    
+    @IBAction func showHelp(_ sender: Any) {
+        print("help function")
+        NSWorkspace.shared.open(URL.init(string: "https://calmzen.leanapp.cn/help")!)
+    }
+    
+    @IBAction func showTerms(_ sender: Any) {
+          NSWorkspace.shared.open(URL.init(string: "https://calmzen.leanapp.cn/tos")!)
+    }
+    
+    
+    @IBAction func print(_ sender: Any) {
+        
+        
+    }
+    
+    @IBAction func showPrivacy(_ sender: Any) {
+          NSWorkspace.shared.open(URL.init(string: "https://calmzen.leanapp.cn/privacy")!)
+    }
+    
     // MARK: - Core Data stack
 
     lazy var persistentContainer: NSPersistentContainer = {

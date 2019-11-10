@@ -40,6 +40,7 @@
 		D8FD50A4236EC9C500B53F40 /* FileApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FD50A3236EC9C500B53F40 /* FileApi.swift */; };
 		D8FD50A6236F011B00B53F40 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FD50A5236F011B00B53F40 /* Common.swift */; };
 		DAA5BBD5F7E27C195F4ECEA4 /* Pods_RelaxMeMacTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 268311F6133617F390605E0E /* Pods_RelaxMeMacTests.framework */; };
+		ECC6B76323785CB200304283 /* VCWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC6B76223785CB200304283 /* VCWindowController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,6 +110,7 @@
 		D8FD50A1236EC98800B53F40 /* DownloadApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadApi.swift; sourceTree = "<group>"; };
 		D8FD50A3236EC9C500B53F40 /* FileApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileApi.swift; sourceTree = "<group>"; };
 		D8FD50A5236F011B00B53F40 /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		ECC6B76223785CB200304283 /* VCWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCWindowController.swift; sourceTree = "<group>"; };
 		FDA5B538752776883EFD574C /* Pods-RelaxMeMacTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RelaxMeMacTests.debug.xcconfig"; path = "Target Support Files/Pods-RelaxMeMacTests/Pods-RelaxMeMacTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -252,6 +254,7 @@
 				D8FD5094236EA21400B53F40 /* ExploreCollectionViewItem.xib */,
 				D8FD5099236EBD4600B53F40 /* HeaderView.swift */,
 				D8FD509B236EBD5000B53F40 /* HeaderView.xib */,
+				ECC6B76223785CB200304283 /* VCWindowController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -492,6 +495,7 @@
 				D8FD507F236DAD2500B53F40 /* MoreViewController.swift in Sources */,
 				D8FD5063236DA84E00B53F40 /* HttpApi.swift in Sources */,
 				D8FD50A0236EC89900B53F40 /* SwiftHEXColors.swift in Sources */,
+				ECC6B76323785CB200304283 /* VCWindowController.swift in Sources */,
 				D8FD50A6236F011B00B53F40 /* Common.swift in Sources */,
 				D8FD5090236DB1AD00B53F40 /* Model.swift in Sources */,
 				D8FD5076236DA9FE00B53F40 /* ResourceUtil.swift in Sources */,
@@ -682,9 +686,11 @@
 			baseConfigurationReference = 5EB2EEDE8875B8C774F03EE7 /* Pods-RelaxMeMac.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ALLOW_ENTITLEMENTS_MODIFICATION = YES;
 				CODE_SIGN_ENTITLEMENTS = RelaxMeMac/RelaxMeMac.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 7A4MVM3QLD;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = RelaxMeMac/Info.plist;
@@ -704,9 +710,11 @@
 			baseConfigurationReference = A4D1024D4C3A140C75AC6A93 /* Pods-RelaxMeMac.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ALLOW_ENTITLEMENTS_MODIFICATION = YES;
 				CODE_SIGN_ENTITLEMENTS = RelaxMeMac/RelaxMeMac.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 7A4MVM3QLD;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = RelaxMeMac/Info.plist;

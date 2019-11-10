@@ -30,7 +30,7 @@ extension CALayer {
     }
 }
 
-class MusicPlayerViewController: NSViewController, AVAudioPlayerDelegate {
+class MusicPlayerViewController: NSViewController, AVAudioPlayerDelegate, NSWindowDelegate {
     
     var audioPlayer = AudioManager.sharedManager.audioPlayer
 
@@ -63,6 +63,10 @@ class MusicPlayerViewController: NSViewController, AVAudioPlayerDelegate {
         // Do view setup here.
         
         
+        self.view.window?.delegate = self
+        self.view.window?.minSize = NSSize(width: 1000, height: 600)
+        self.view.window?.maxSize = NSSize(width: 1000, height: 600)
+        
         if audioPlayer != nil {
             audioPlayer?.pause()
             audioPlayer?.stop()
@@ -82,6 +86,11 @@ class MusicPlayerViewController: NSViewController, AVAudioPlayerDelegate {
 
      
         
+    }
+    
+    func windowWillResize(_ sender: NSWindow, to frameSize: NSSize) -> NSSize {
+        let minimumSize = NSSize(width: 1000, height: 600)
+        return minimumSize
     }
     
       func startPlay() -> Void {
