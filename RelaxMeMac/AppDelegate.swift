@@ -22,15 +22,24 @@ class AudioManager: NSObject, AVAudioPlayerDelegate {
 }
 
 @NSApplicationMain
-class AppDelegate: NSObject, NSApplicationDelegate {
+class AppDelegate: NSResponder, NSApplicationDelegate, NSMenuItemValidation {
+    
+    func validateMenuItem(_ menuItem: NSMenuItem) -> Bool {
+        return menuItem.action == #selector(showWindow(_:))
+    }
+    
+    @objc func showWindow(_ sender: AnyObject) {
+        NotificationCenter.default.post(name: NSNotification.Name.init("handleReOpen"), object: nil)
 
+    }
+    
     
     func applicationDockMenu(_ sender: NSApplication) -> NSMenu? {
         return nil
     }
 
     func applicationDidBecomeActive(_ notification: Notification) {
-        
+        NSApplication.shared.unhide(self)
     }
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
@@ -40,6 +49,12 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     func applicationWillTerminate(_ aNotification: Notification) {
         // Insert code here to tear down your application
     }
+    
+    func applicationShouldHandleReopen(_ sender: NSApplication, hasVisibleWindows flag: Bool) -> Bool {
+        NotificationCenter.default.post(name: NSNotification.Name.init("handleReOpen"), object: nil)
+        return true
+    }
+    
     
     func applicationShouldTerminateAfterLastWindowClosed(_ sender: NSApplication) -> Bool {
         return false
@@ -54,11 +69,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
           NSWorkspace.shared.open(URL.init(string: "https://calmzen.leanapp.cn/tos")!)
     }
     
-    
-    @IBAction func print(_ sender: Any) {
-        
-        
-    }
     
     @IBAction func showPrivacy(_ sender: Any) {
           NSWorkspace.shared.open(URL.init(string: "https://calmzen.leanapp.cn/privacy")!)

@@ -10,14 +10,22 @@ import Cocoa
 
 class VCWindowController: NSWindowController, NSWindowDelegate {
 
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        
+    }
+    
     override func windowDidLoad() {
         super.windowDidLoad()
-    
+        NotificationCenter.default.addObserver(forName: NSNotification.Name.init("handleReOpen"), object: nil, queue: nil) { (_) in
+            self.window?.makeKeyAndOrderFront(self)
+        }
         // Implement this method to handle any initialization after your window controller's window has been loaded from its nib file.
+        
     }
-
+// https://blog.csdn.net/lovechris00/article/details/78143104
     func windowShouldClose(_ sender: NSWindow) -> Bool {
-        NSApp.hide(nil)
-        return false
+//        NSApp.hide(nil)
+        return true
     }
 }
